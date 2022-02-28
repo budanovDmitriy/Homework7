@@ -10,6 +10,7 @@ import UIKit
 class FirstModalViewController: UIViewController {
 
     var gettedCustomer : Customer? = nil
+    var someString : String? = nil
     override func viewDidLoad() {
         super.viewDidLoad()
         print(gettedCustomer)

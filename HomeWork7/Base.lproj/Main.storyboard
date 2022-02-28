@@ -24,14 +24,27 @@
                                     <segue destination="gk0-gc-sjC" kind="show" id="eK1-gV-cqc"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sJV-ap-rsJ">
+                                <rect key="frame" x="87" y="483.5" width="240" height="31"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="Go to FourthModalViewController"/>
+                                <connections>
+                                    <action selector="buttonAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="G4p-Hl-K8u"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemRedColor"/>
                         <constraints>
+                            <constraint firstItem="sJV-ap-rsJ" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="B0B-jJ-cAZ"/>
                             <constraint firstItem="RtQ-Eq-fVd" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="iOu-fW-zEe"/>
+                            <constraint firstItem="sJV-ap-rsJ" firstAttribute="top" secondItem="RtQ-Eq-fVd" secondAttribute="bottom" constant="20" id="kc5-t9-Nfa"/>
                             <constraint firstItem="RtQ-Eq-fVd" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="zBl-y3-sef"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <segue destination="jiX-CD-Fh2" kind="show" identifier="viewControllerToFourth" id="6wa-oe-DZN"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
@@ -175,12 +188,20 @@
                                     </label>
                                 </subviews>
                             </stackView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="someString: " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="frB-Ug-9ZH">
+                                <rect key="frame" x="159" y="767.5" width="96.5" height="20.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="5m5-nX-UUp"/>
                         <color key="backgroundColor" systemColor="systemBlueColor"/>
                         <constraints>
+                            <constraint firstItem="5m5-nX-UUp" firstAttribute="bottom" secondItem="frB-Ug-9ZH" secondAttribute="bottom" constant="20" id="6Lr-vb-HTy"/>
                             <constraint firstItem="W9N-mm-8Gt" firstAttribute="centerX" secondItem="G0o-ID-HyR" secondAttribute="centerX" id="bA3-FI-qDN"/>
                             <constraint firstItem="W9N-mm-8Gt" firstAttribute="centerY" secondItem="G0o-ID-HyR" secondAttribute="centerY" id="dny-N6-wIt"/>
+                            <constraint firstItem="frB-Ug-9ZH" firstAttribute="centerX" secondItem="G0o-ID-HyR" secondAttribute="centerX" id="loa-KK-ReI"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="dCT-ja-bIu"/>
@@ -189,6 +210,7 @@
                         <outlet property="discountLabel" destination="pzb-5x-3lB" id="7rK-19-m5a"/>
                         <outlet property="idLabel" destination="uLP-1J-t6Y" id="a8w-Uh-gGl"/>
                         <outlet property="nameLabel" destination="7O5-n7-A4u" id="iOa-Ev-Lwr"/>
+                        <outlet property="someStringLabel" destination="frB-Ug-9ZH" id="kox-9Y-z5o"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="IOX-fy-LoD" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -196,6 +218,9 @@
             <point key="canvasLocation" x="2874" y="68"/>
         </scene>
     </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="6wa-oe-DZN"/>
+    </inferredMetricsTieBreakers>
     <resources>
         <systemColor name="systemBlueColor">
             <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
