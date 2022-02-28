@@ -17,9 +17,9 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RtQ-Eq-fVd">
-                                <rect key="frame" x="173.5" y="432.5" width="67" height="31"/>
+                                <rect key="frame" x="94" y="432.5" width="226" height="31"/>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="filled" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="Go to FirstModalViewController"/>
                                 <connections>
                                     <segue destination="gk0-gc-sjC" kind="show" id="eK1-gV-cqc"/>
                                 </connections>
@@ -46,9 +46,9 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Hmh-Dn-GQN">
-                                <rect key="frame" x="173.5" y="405.5" width="67" height="31"/>
+                                <rect key="frame" x="84" y="405.5" width="246.5" height="31"/>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="filled" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="Go to SecondModalViewController"/>
                                 <connections>
                                     <action selector="buttonAction:" destination="gk0-gc-sjC" eventType="touchUpInside" id="KfY-ah-kXV"/>
                                     <action selector="buttonActoin:" destination="9xK-v1-bxk" eventType="touchUpInside" id="MfL-ff-iiI"/>
@@ -81,9 +81,9 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GfX-Zz-USW">
-                                <rect key="frame" x="173.5" y="405.5" width="67" height="31"/>
+                                <rect key="frame" x="91.5" y="405.5" width="231.5" height="31"/>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="filled" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="Go to ThirdModalViewController"/>
                                 <connections>
                                     <action selector="buttonAction:" destination="KOY-ai-45K" eventType="touchUpInside" id="bEG-El-A1J"/>
                                 </connections>
@@ -114,9 +114,9 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CiC-7N-G3v">
-                                <rect key="frame" x="173.5" y="405.5" width="67" height="31"/>
+                                <rect key="frame" x="87" y="405.5" width="240" height="31"/>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="filled" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="Go to FourthModalViewController"/>
                                 <connections>
                                     <action selector="buttonAction:" destination="mwf-cX-JKI" eventType="touchUpInside" id="jnN-XD-zuN"/>
                                 </connections>
