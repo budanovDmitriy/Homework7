@@ -9,16 +9,20 @@ import UIKit
 
 class FirstModalViewController: UIViewController {
 
+    // MARK: - Public properties
+    
     var gettedCustomer : Customer? = nil
     var someString : String? = nil
+    
+    // MARK: - Override methods
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        print(gettedCustomer)
-        // Do any additional setup after loading the view.
     }
 
+    // MARK: - IBActions
+    
     @IBSegueAction func prepareSecondModalViewController(_ coder: NSCoder) -> SecondModalViewController? {
-        
         let destinationViewController = SecondModalViewController(coder: coder)
         destinationViewController?.secondGettedCustomer = gettedCustomer
         return destinationViewController
@@ -27,5 +31,4 @@ class FirstModalViewController: UIViewController {
     @IBAction func buttonAction(_ sender: Any) {
         performSegue(withIdentifier: "firstToSecond", sender: self)
     }
-    
 }

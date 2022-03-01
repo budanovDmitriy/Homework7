@@ -9,13 +9,18 @@ import UIKit
 
 class ThirdModalViewController: UIViewController {
 
+    // MARK: - Public properties
+    
     var thirdGettedCustomer : Customer? = nil
+    
+    // MARK: - Override methods
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        print(thirdGettedCustomer)
-        // Do any additional setup after loading the view.
     }
 
+    // MARK: - IBActions
+    
     @IBSegueAction func prepareFourthModalVievController(_ coder: NSCoder) ->
         FourthModalViewController? {
             let destinationViewController = FourthModalViewController(coder: coder)
